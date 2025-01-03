@@ -22,7 +22,7 @@ publish_topic = "YOUR PUBLISH TOPIC HERE"
 capture_location = "YOUR CAPTURED IMAGE LOCATION"
 # Set resolution of image
 resolution = "1920x1080"
-# Command to take picture via FSWEBCAM
+# Command to take picture via fswebcam
 camera_command = f"fswebcam -r {resolution} --no-banner {capture_location}"
 
 # Current image-compatible models. Be aware of varying API call limits for each model.
