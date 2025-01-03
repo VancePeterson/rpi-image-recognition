@@ -57,10 +57,10 @@ MQTT Topics: Customize subscribe_topic and publish_topic for integration with yo
 
 # Example Workflow
 
-1. A device or service publishes a message to the subscribe_topic.
-2. The script captures an image using the camera.
-3. The image is analyzed by OpenAI based on the provided prompt.
-4. The result is published to the publish_topic.
+1. A device or service publishes a message to the subscribe_topic
+2. The script captures an image using the camera
+3. The image is analyzed by OpenAI based on the provided prompt
+4. The result is published to the publish_topic
 
 # Troubleshooting
 
