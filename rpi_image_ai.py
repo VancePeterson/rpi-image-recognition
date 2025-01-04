@@ -2,6 +2,7 @@ import paho.mqtt.client as mqtt
 import subprocess
 import os
 import base64
+import time
 import config # Location of file containing API Key
 from openai import OpenAI
 
@@ -90,7 +91,15 @@ def main():
     client.on_connect = on_connect
     client.on_message = on_message
 
-    client.connect(broker_address, broker_port, 60)
+    while True:
+        try:
+            print("Attempting to connect to MQTT broker...")
+            client.connect(broker_address, broker_port, 60)
+            break
+        except Exception as e:
+            print(f"MQTT connection failed: {e}. Retrying in 5 seconds...")
+            time.sleep(5)
+
     client.loop_forever()
 
 if __name__ == "__main__":
