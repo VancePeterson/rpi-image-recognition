@@ -1,4 +1,4 @@
-# Raspberry-Pi-OpenAI-Image-Recognition
+# Raspberry Pi OpenAI Image Recognition
 
 This repository contains a Python script for Raspberry Pi that uses OpenAI's API to analyze images captured via a connected camera. The script uses MQTT for message handling, allowing integration with IoT systems for publishing and subscribing to topics.
 
